@@ -1,0 +1,14 @@
+{
+    "cSpell.words": [
+        "TPERSON"
+    ],
+    "files.associations": {
+        "*.make": "makefile",
+        "Makefile2": "makefile",
+        "typeinfo": "cpp",
+        "chrono": "cpp",
+        "text_encoding": "cpp",
+        "complex": "cpp",
+        "format": "cpp"
+    }
+}
