@@ -3,6 +3,7 @@
 
 bin
 **/build**
+!build.sh
 
 # Prerequisites
 *.d

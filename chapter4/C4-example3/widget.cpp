@@ -215,6 +215,6 @@ void Widget::on_btnReplaced_clicked()
     ui->plainTextEdit->appendPlainText(str);
 
     str.replace(N + 1, subStr.size(), "OK!");
-    qDebug(str.toLocal8Bit().data());
+    qDebug("%s", str.toLocal8Bit().data());
     ui->plainTextEdit->appendPlainText(str);
 }
