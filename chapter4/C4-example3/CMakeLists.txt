@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(C4-exmaple3 VERSION 0.1 LANGUAGES CXX)
+project(C4-example3 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -20,7 +20,7 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(C4-exmaple3
+    qt_add_executable(C4-example3
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
@@ -31,34 +31,34 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(C4-exmaple3 SHARED
+        add_library(C4-example3 SHARED
             ${PROJECT_SOURCES}
         )
 
     # Define properties for Android with Qt 5 after find_package() calls as:
     # set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(C4-exmaple3
+        add_executable(C4-example3
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
 target_include_directories(
-    C4-exmaple3
-    PRIVATE build/C4-exmaple3_autogen/include
+    C4-example3
+    PRIVATE build/C4-example3_autogen/include
 )
 
-target_link_libraries(C4-exmaple3 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(C4-example3 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.C4-exmaple3)
+    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.C4-example3)
 endif()
 
-set_target_properties(C4-exmaple3 PROPERTIES
+set_target_properties(C4-example3 PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -67,12 +67,12 @@ set_target_properties(C4-exmaple3 PROPERTIES
 )
 
 include(GNUInstallDirs)
-install(TARGETS C4-exmaple3
+install(TARGETS C4-example3
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(C4-exmaple3)
+    qt_finalize_executable(C4-example3)
 endif()
