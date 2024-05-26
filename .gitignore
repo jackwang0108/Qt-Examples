@@ -1,6 +1,7 @@
 资料
 .DS_Store
 
+bin
 **/build**
 
 # Prerequisites
