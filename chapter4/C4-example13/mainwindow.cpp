@@ -247,6 +247,7 @@ void MainWindow::on_actZoomOut_triggered()
 {
     ratio = ratio * 0.8;
 
+    int width = ratio * pixMap.width();
     int height = ratio * pixMap.height();
 
     ui->labelPic->setPixmap(ui->labelPic->pixmap().scaled(width, height));
