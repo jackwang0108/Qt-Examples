@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.make": "makefile",
+        "Makefile2": "makefile",
+        "qstandarditemmodel": "cpp",
+        "qstyleditemdelegate": "cpp"
+    },
+    "cSpell.words": [
+        "Spinbox",
+        "TCOMBOBOXDELEGATE",
+        "TFLOATSPINBOXDELEGATE",
+        "TSPINBOXDELEGATE"
+    ]
+}
