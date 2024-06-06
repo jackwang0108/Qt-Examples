@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "TFORMDOC"
+    ],
+    "files.associations": {
+        "*.make": "makefile",
+        "Makefile2": "makefile",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "system_error": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
+    }
+}
