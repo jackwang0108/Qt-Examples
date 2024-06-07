@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.make": "makefile",
+        "Makefile2": "makefile",
+        "qdialog": "cpp",
+        "qtemporarydir": "cpp"
+    }
+}
