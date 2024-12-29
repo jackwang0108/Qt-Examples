@@ -320,7 +320,7 @@ class Ui_Dialog(object):
         self.toolBox.addItem(self.pageFileInfo, icon2, u"QFileInfo\u7c7b")
         self.pageDir = QWidget()
         self.pageDir.setObjectName(u"pageDir")
-        self.pageDir.setGeometry(QRect(0, 0, 334, 420))
+        self.pageDir.setGeometry(QRect(0, -68, 334, 420))
         self.verticalLayout_4 = QVBoxLayout(self.pageDir)
         self.verticalLayout_4.setSpacing(6)
         self.verticalLayout_4.setContentsMargins(11, 11, 11, 11)

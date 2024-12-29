@@ -3,6 +3,7 @@
         "*.make": "makefile",
         "Makefile2": "makefile",
         "qdialog": "cpp",
-        "qtemporarydir": "cpp"
+        "qtemporarydir": "cpp",
+        "qfilesystemwatcher": "cpp"
     }
 }
