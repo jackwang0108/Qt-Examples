@@ -1,5 +1,6 @@
 资料
 .DS_Store
+.cache
 
 bin
 **/build**
